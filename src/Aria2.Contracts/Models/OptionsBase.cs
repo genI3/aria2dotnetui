@@ -139,7 +139,7 @@ namespace Aria2.Contracts.Models
         /// level of encryption method.
         /// </summary>
         [JsonProperty("bt-min-crypto-level")]
-        public string? BtMinCryptoLevel { get; set; }
+        public BittorrentCryptoLevel BtMinCryptoLevel { get; set; }
 
         /// <summary>
         /// Gets or sets the first and last
@@ -317,7 +317,7 @@ namespace Aria2.Contracts.Models
         /// use for pre-allocate file.
         /// </summary>
         [JsonProperty("file-allocation")]
-        public string? FileAllocation { get; set; }
+        public FileAllocationType FileAllocation { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating
@@ -388,7 +388,7 @@ namespace Aria2.Contracts.Models
         /// Gets or sets FTP transfer type.
         /// </summary>
         [JsonProperty("ftp-type")]
-        public string? FtpType { get; set; }
+        public FtpType FtpType { get; set; }
 
         /// <summary>
         /// Gets or sets FTP user.
@@ -595,7 +595,7 @@ namespace Aria2.Contracts.Models
         /// for metalink download.
         /// </summary>
         [JsonProperty("metalink-preferred-protocol")]
-        public string? MetalinkPreferedProtocol { get; set; }
+        public Protocol MetalinkPreferedProtocol { get; set; }
 
         /// <summary>
         /// Gets or sets the version
@@ -663,7 +663,7 @@ namespace Aria2.Contracts.Models
         /// to use in proxy request.
         /// </summary>
         [JsonProperty("proxy-method")]
-        public string? ProxyMethod { get; set; }
+        public ProxyMethod ProxyMethod { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating
@@ -762,7 +762,7 @@ namespace Aria2.Contracts.Models
         /// algorithm used in HTTP/FTP download.
         /// </summary>
         [JsonProperty("stream-piece-selector")]
-        public string? StreamPieceSelector { get; set; }
+        public BlockSelectorAlgorithm StreamPieceSelector { get; set; }
 
         /// <summary>
         /// Gets or sets timeout in seconds.
@@ -774,7 +774,7 @@ namespace Aria2.Contracts.Models
         /// Gets or sets URI selection algorithm.
         /// </summary>
         [JsonProperty("uri-selector")]
-        public string? UriSelectior { get; set; }
+        public UriSelectorAlgorithm UriSelectior { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating 
@@ -785,7 +785,8 @@ namespace Aria2.Contracts.Models
         public bool UseHead { get; set; }
 
         /// <summary>
-        /// Gets or sets user agent for HTTP(S) downloads.
+        /// Gets or sets user agent
+        /// for HTTP(S) downloads.
         /// </summary>
         [JsonProperty("user-agent")]
         public string? UserAgent { get; set; }

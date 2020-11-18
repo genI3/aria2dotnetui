@@ -47,7 +47,7 @@ namespace Aria2.Contracts.Models
         /// to output to console.
         /// </summary>
         [JsonProperty("console-log-level")]
-        public string? ConsoleLogLevel { get; set; }
+        public LogLevel ConsoleLogLevel { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating
@@ -114,7 +114,7 @@ namespace Aria2.Contracts.Models
         /// format Download Result.
         /// </summary>
         [JsonProperty("download-result")]
-        public string? DownloadResult { get; set; }
+        public DownloadResult DownloadResult { get; set; }
 
         /// <summary>
         /// Gets or sets DSCP value in
@@ -157,7 +157,7 @@ namespace Aria2.Contracts.Models
         /// for polling events.
         /// </summary>
         [JsonProperty("event-poll")]
-        public string? EventPoll { get; set; }
+        public EventPollMethod EventPoll { get; set; }
 
         /// <summary>
         /// Gets or sets the help
@@ -201,7 +201,7 @@ namespace Aria2.Contracts.Models
         /// Gets or sets log level to output. 
         /// </summary>
         [JsonProperty("log-level")]
-        public string? LogLevel { get; set; }
+        public LogLevel LogLevel { get; set; }
 
         /// <summary>
         /// Gets or sets the maximum number
@@ -326,7 +326,7 @@ namespace Aria2.Contracts.Models
 
         /// <summary>
         /// Gets or sets a file
-        /// path forsave Cookies in
+        /// path for save Cookies in
         /// Mozilla/Firefox(1.x/2.x)/Netscape format.
         /// </summary>
         [JsonProperty("save-cookies")]
