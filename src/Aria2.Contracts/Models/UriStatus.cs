@@ -1,11 +1,17 @@
 namespace Aria2.Contracts.Models
 {
     /// <summary>
-    /// Possible URI statuses.
+    /// Specifies URI status.
     /// </summary>
     public enum UriStatus 
     {
+        /// <summary>
+        /// Used.
+        /// </summary>
         Used,
+        /// <summary>
+        /// Waitnig.
+        /// </summary>
         Waiting
     }
 }

@@ -2,6 +2,9 @@ using System;
 
 namespace Aria2.Contracts.Models
 {
+    /// <summary>
+    /// Represents information about download Servers.
+    /// </summary>
     public class ConnectedServer
     {
         /// <summary>

@@ -4,6 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <Nullable>enable</Nullable>
     <Optimize>true</Optimize>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Aria2.Contracts.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

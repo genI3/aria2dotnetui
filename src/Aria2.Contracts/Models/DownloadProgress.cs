@@ -1,5 +1,8 @@
 namespace Aria2.Contracts.Models
 {
+    /// <summary>
+    /// Represents a current information about download.
+    /// </summary>
     public class DownloadProgress
     {
         /// <summary>

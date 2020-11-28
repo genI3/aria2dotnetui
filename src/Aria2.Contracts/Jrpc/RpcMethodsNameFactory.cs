@@ -1,5 +1,9 @@
 namespace Aria2.Contracts
 {
+    /// <summary>
+    /// Provides functionality for transformation of aria2 contracts
+    /// JSON-RPC methods names to methods name for direct invocation.
+    /// </summary>
     public static class RpcMethodsNameFactory
     {
         /// <summary>

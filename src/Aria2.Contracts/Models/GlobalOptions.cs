@@ -2,6 +2,9 @@
 
 namespace Aria2.Contracts.Models
 {
+    /// <summary>
+    /// Represents a ara2 global options.
+    /// </summary>
     public class GlobalOptions : OptionsBase
     {
         /// <summary>

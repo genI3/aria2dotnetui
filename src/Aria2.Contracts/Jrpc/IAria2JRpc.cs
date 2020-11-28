@@ -345,14 +345,14 @@ namespace Aria2.Contracts.Jrpc
         Task<string[]> AddMetalink(string secret, string metalink, DownloadOptions? options, int position);
 
         /// <summary>
-        /// Removes the download denoted by <paramref name="gid">.
+        /// Removes the download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="gid">GID of download to remove.</param>
         /// <returns>GID of removed download.</returns>
         Task<string> Remove(string gid);
 
         /// <summary>
-        /// Removes the download denoted by <paramref name="gid">.
+        /// Removes the download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="secret">Authorization token.</param>
         /// <param name="gid">GID of download to remove.</param>
@@ -360,7 +360,7 @@ namespace Aria2.Contracts.Jrpc
         Task<string> Remove(string secret, string gid);
 
         /// <summary>
-        /// This method removes the download denoted by <paramref name="gid">.
+        /// This method removes the download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="gid">GID of download to remove.</param>
         /// <returns>GID of removed download.</returns>
@@ -373,7 +373,7 @@ namespace Aria2.Contracts.Jrpc
         Task<string> ForceRemove(string gid);
 
         /// <summary>
-        /// This method removes the download denoted by <paramref name="gid">.
+        /// This method removes the download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="secret">Authorization token.</param>
         /// <param name="gid">GID of download to remove.</param>
@@ -387,14 +387,14 @@ namespace Aria2.Contracts.Jrpc
         Task<string> ForceRemove(string secret, string gid);
 
         /// <summary>
-        /// Pauses the download denoted by <paramref name="gid">.
+        /// Pauses the download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="gid">GID of download to pause.</param>
         /// <returns>GID of paused download.</returns>
         Task<string> Pause(string gid);
 
         /// <summary>
-        /// Pauses the download denoted by <paramref name="gid">.
+        /// Pauses the download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="secret">Authorization token.</param>
         /// <param name="gid">GID of download to pause.</param>
@@ -423,7 +423,7 @@ namespace Aria2.Contracts.Jrpc
         Task<string> PauseAll(string secret);
 
         /// <summary>
-        /// Pauses the download denoted by <paramref name="gid">.
+        /// Pauses the download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="gid">GID of download to pause.</param>
         /// <returns>GID of paused download.</returns>
@@ -436,7 +436,7 @@ namespace Aria2.Contracts.Jrpc
         Task<string> ForcePause(string gid);
 
         /// <summary>
-        /// Pauses the download denoted by <paramref name="gid">.
+        /// Pauses the download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="secret">Authorization token.</param>
         /// <param name="gid">GID of download to pause.</param>
@@ -474,7 +474,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Changes the status of the download denoted
-        /// by <paramref name="gid"> from paused to
+        /// by <paramref name="gid"/> from paused to
         /// waiting, making the download eligible
         /// to be restarted.
         /// </summary>
@@ -488,7 +488,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Changes the status of the download denoted
-        /// by <paramref name="gid"> from paused to
+        /// by <paramref name="gid"/> from paused to
         /// waiting, making the download eligible
         /// to be restarted.
         /// </summary>
@@ -532,7 +532,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns the progress of the
-        /// download denoted by <paramref name="gid">.
+        /// download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="gid">
         /// GID of the download.
@@ -544,7 +544,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns the progress of the
-        /// download denoted by <paramref name="gid">.
+        /// download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="secret">
         /// Authorization token.
@@ -559,7 +559,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns the progress of the
-        /// download denoted by <paramref name="gid">.
+        /// download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="gid">
         /// GID of the download.
@@ -575,7 +575,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns the progress of the
-        /// download denoted by <paramref name="gid">.
+        /// download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="secret">
         /// Authorization token.
@@ -594,7 +594,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns the URIs used in the
-        /// download denoted by <paramref name="gid">.
+        /// download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="gid">
         /// GID of the download.
@@ -606,7 +606,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns the URIs used in the
-        /// download denoted by <paramref name="gid">.
+        /// download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="secret">
         /// Authorization token.
@@ -621,7 +621,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns the file list of the
-        /// download denoted by <paramref name="gid">.
+        /// download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="gid">
         /// GID of the download.
@@ -633,7 +633,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns the file list of the
-        /// download denoted by <paramref name="gid">.
+        /// download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="secret">
         /// Authorization token.
@@ -648,7 +648,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns a list peers of the
-        /// download denoted by <paramref name="gid">.
+        /// download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="gid">
         /// GID of the download.
@@ -661,7 +661,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns a list peers of the
-        /// download denoted by <paramref name="gid">.
+        /// download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="secret">
         /// Authorization token.
@@ -677,7 +677,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns currently connected HTTP(S)/FTP/SFTP
-        /// servers of the download denoted by <paramref name="gid">.
+        /// servers of the download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="gid">GID of the download.</param>
         /// <returns>Array of currently connected servers.</returns>
@@ -685,7 +685,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns currently connected HTTP(S)/FTP/SFTP
-        /// servers of the download denoted by <paramref name="gid">.
+        /// servers of the download denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="secret">Authorization token.</param>
         /// <param name="gid">GID of the download.</param>
@@ -909,7 +909,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Changes the position of the download
-        /// denoted by <paramref name="gid"> in the queue.
+        /// denoted by <paramref name="gid"/> in the queue.
         /// </summary>
         /// <param name="gid">GID of the download.</param>
         /// <param name="pos">Relative position.</param>
@@ -923,7 +923,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Changes the position of the download
-        /// denoted by <paramref name="gid"> in the queue.
+        /// denoted by <paramref name="gid"/> in the queue.
         /// </summary>
         /// <param name="secret">Authorization token.</param>
         /// <param name="gid">GID of the download.</param>
@@ -1036,7 +1036,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns options of the download
-        /// denoted by <paramref name="gid">.
+        /// denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="gid">
         /// GID of the download.
@@ -1054,7 +1054,7 @@ namespace Aria2.Contracts.Jrpc
 
         /// <summary>
         /// Returns options of the download
-        /// denoted by <paramref name="gid">.
+        /// denoted by <paramref name="gid"/>.
         /// </summary>
         /// <param name="secret">
         /// Authorization token.
@@ -1203,9 +1203,6 @@ namespace Aria2.Contracts.Jrpc
         /// Purges completed/error/removed
         /// downloads to free memory.
         /// </summary>
-        /// <param name="secret">
-        /// Authorization token.
-        /// </param>
         /// <returns>OK</returns>
         Task<string> PurgeDownloadResult();
 
@@ -1264,9 +1261,6 @@ namespace Aria2.Contracts.Jrpc
         /// <summary>
         /// Returns session information.
         /// </summary>
-        /// <param name="secret">
-        /// Authorization token.
-        /// </param>
         /// <returns>
         /// Session ID, which is generated
         /// each time when aria2 is invoked.
@@ -1276,6 +1270,9 @@ namespace Aria2.Contracts.Jrpc
         /// <summary>
         /// Returns session information.
         /// </summary>
+        /// <param name="secret">
+        /// Authorization token.
+        /// </param>
         /// <returns>
         /// Session ID, which is generated
         /// each time when aria2 is invoked.
@@ -1285,9 +1282,6 @@ namespace Aria2.Contracts.Jrpc
         /// <summary>
         /// Shuts down aria2.
         /// </summary>
-        /// <param name="secret">
-        /// Authorization token.
-        /// </param>
         /// <returns>OK</returns>
         Task<string> Shutdown();
 
@@ -1336,7 +1330,7 @@ namespace Aria2.Contracts.Jrpc
         /// <summary>
         /// Saves the current session to
         /// a file specified by the
-        /// <seealso cref="GlobalOptions.SaveSession">.
+        /// <seealso cref="GlobalOptions.SaveSession"/>.
         /// </summary>
         /// <returns>OK if it succeeds.</returns>
         Task<string> SaveSession();
@@ -1344,7 +1338,7 @@ namespace Aria2.Contracts.Jrpc
         /// <summary>
         /// Saves the current session to
         /// a file specified by the
-        /// <seealso cref="GlobalOptions.SaveSession">.
+        /// <seealso cref="GlobalOptions.SaveSession"/>.
         /// </summary>
         /// <param name="secret">
         /// Authorization token.

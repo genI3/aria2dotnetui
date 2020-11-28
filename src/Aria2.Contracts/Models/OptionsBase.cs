@@ -2,6 +2,9 @@
 
 namespace Aria2.Contracts.Models
 {
+    /// <summary>
+    /// Represents a ara2 general options.
+    /// </summary>
     public class OptionsBase
     {
         /// <summary>
@@ -195,7 +198,7 @@ namespace Aria2.Contracts.Models
         /// Gets or sets a value that indiacting
         /// stop BitTorrent download if download
         /// speed is 0 in consecutive
-        /// <paramref name="BtStopTimeout"/> seconds. 
+        /// <see name="BtStopTimeout"/> seconds. 
         /// </summary>
         [JsonProperty("bt-stop-timeout")]
         public int BtStopTimeout { get; set; }

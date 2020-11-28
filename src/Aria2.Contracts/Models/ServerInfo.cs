@@ -1,5 +1,8 @@
 namespace Aria2.Contracts.Models
 {
+    /// <summary>
+    /// Represents a specific information about Server.
+    /// </summary>
     public class ServerInfo
     {
         /// <summary>

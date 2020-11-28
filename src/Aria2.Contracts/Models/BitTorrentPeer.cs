@@ -1,5 +1,9 @@
 namespace Aria2.Contracts.Models
 {
+    /// <summary>
+    /// Represents a Peer for
+    /// BitTorrent protocol.
+    /// </summary>
     public class BitTorrentPeer
     {
         /// <summary>

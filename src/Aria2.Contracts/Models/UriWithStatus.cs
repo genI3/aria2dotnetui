@@ -1,5 +1,9 @@
 namespace Aria2.Contracts.Models
 {
+
+    /// <summary>
+    /// Represents a URI with its status.
+    /// </summary>
     public class UriWithStatus
     {
         /// <summary>

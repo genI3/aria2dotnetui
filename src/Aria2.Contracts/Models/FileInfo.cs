@@ -2,29 +2,32 @@ using System;
 
 namespace Aria2.Contracts.Models
 {
+    /// <summary>
+    /// Represents a specific information about file.
+    /// </summary>
     public class FileInfo
     {
         /// <summary>
         /// Index of the file,
         /// starting at 1, in the
         /// same order as files
-        /// appear in the multi-file torrent
+        /// appear in the multi-file torrent.
         /// </summary>
         public int Index { get; set; }
 
         /// <summary>
-        /// File path
+        /// File path.
         /// </summary>
         public string Path { get; set; } = string.Empty;
 
         /// <summary>
-        /// File size in bytes
+        /// File size in bytes.
         /// </summary>
         public long Length { get; set; }
 
         /// <summary>
         /// Completed length of
-        /// this file in bytes
+        /// this file in bytes.
         /// </summary>
         public long CompletedLength { get; set; }
 
@@ -41,7 +44,7 @@ namespace Aria2.Contracts.Models
         public bool Selected { get; set; }
 
         /// <summary>
-        /// Array of URIs for this file
+        /// Array of URIs for this file.
         /// </summary>
         public UriWithStatus[] Uris { get; set; } = Array.Empty<UriWithStatus>();
     }
